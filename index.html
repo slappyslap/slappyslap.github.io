@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Maxime Badin</title>
+
+        <link rel="stylesheet" href="./public/build/tailwind.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+    <body class="w-full dark:bg-gray-800">
+        <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 hidden sm:block">
+            <nav>
+                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex items-center justify-between h-16">
+                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
+                            <div class="hidden sm:block sm:ml-6">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Acceuil</a>
+                                    <a href="#aboutMe" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">A propos</a>
+                                    <a href="#myProjects" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Projets</a>
+                                    <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Etudes</a>
+                                    <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Compétences</a>
+                                    <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container mx-auto px-6 text-center sm:text-left sm:px-6 lg:px-28 md:space-y-8">
+            <!-- home -->
+            <section>
+                <div class="mx-auto flex flex-col md:flex-row items-center my-0 sm:my-12 md:my-24">
+                    <div class="flex flex-col w-full lg:w-2/3 justify-center items-start pt-12 pb-24">
+                        <h1 class="text-3xl md:text-5xl xl:text-6xl font-medium leading-tight md:leading-tight xl:leading-tight text-secondary dark:text-gray-200 mb-5 uppercase w-full sm:w-auto">Maxime Badin</h1>
+                        <h1 class="text-3xl md:text-5xl xl:text-6xl font-semibold leading-tight md:leading-tight xl:leading-tight text-secondary dark:text-gray-200 w-full sm:w-auto">Développeur web & DevOps</h1>
+                        <p class="leading-normal mb-4 dark:text-gray-200">Passionné par l'informatique et les nouvelles technologies depuis toujours, je suis en alternance afin de devenir développeur web</p>
+                    </div>
+                    <div class="w-full lg:w-1/3 lg:py-6 text-center">
+                        <img src="public/images/desktop.png" alt="Desktop of developper">
+                    </div>
+                </div>
+            </section>
+
+            <!-- About me -->
+
+            <section id="aboutMe">
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">A propos de moi</h3>
+                    <div class="description w-full md:w-3/4">
+                        <div class="flex flex-col md:flex-row h-full">
+                            <div class="profile-avatar md:mr-10">
+                                <div class="border border-gray-300 rounded-md max-w-sm w-48 h-full mx-auto">
+                                    <div class="flex h-full">
+                                        <div class="flex">
+                                            <img class="rounded-md object-cover object-center w-full h-full" src="public/images/maxime.jpg" alt="Photo de Maxime Badin">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col mt-10 md:mt-0">
+                                <p class="text-sm text-secondary leading-6 font-semibold dark:text-gray-200">Maxime BADIN</p>
+                                <p class="text-sm text-secondary leading-6 font-normal mt-5 dark:text-gray-200">Un étudiant en informatique aimant travaillant avec les dernières technologies. Au cours des dernières années, j'ai travaillé sur de nombreux projets personnel comme professionnel, programmé et testé sur une variété de plateformes et de langages. Je suis passionné par la façon d'utiliser les technologies de pointe pour résoudre un vaste éventail de problèmes, qu'ils soient centrés sur l'entreprise ou liés à la société.</p>
+                                <p class="text-sm text-secondary leading-6 mt-5 dark:text-gray-200">L'informatique et plus particulièrement le développement est une passion pour moi, j'adore apprendre et découvrir de nouvelles technologies et de nouveau domaine, en ce moment, je travaille sur le framework Symfony tout en apprenant a utilisé les framework javascript comme React ou Vue.js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <ul class="flex justify-start items-center">
+                            <li class="pr-4">
+                                <a href="https://www.linkedin.com/in/maxime-badin-96bb48162/" target="_blank"><svg class="fill-current hover:fill-current hover:text-secondary dark:text-white dark:hover:text-gray-400 transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="26.993" height="26.993"><path data-name="Icon ionic-logo-linkedin" d="M24.834 0H2.306A2.2 2.2 0 000 2.1v22.58a2.375 2.375 0 002.306 2.313h22.521a2.255 2.255 0 002.166-2.313V2.1A2.07 2.07 0 0024.834 0zM8.367 22.5H4.5V10.477h3.867zm-1.8-13.852h-.028A1.985 1.985 0 014.5 6.574 2 2 0 016.588 4.5a1.992 1.992 0 012.067 2.074 2 2 0 01-2.088 2.074zM22.5 22.5h-3.867v-6.574c0-1.575-.562-2.651-1.962-2.651a2.116 2.116 0 00-1.983 1.425 2.6 2.6 0 00-.134.949V22.5h-3.867V10.477h3.867v1.673a3.915 3.915 0 013.488-1.95c2.538 0 4.458 1.669 4.458 5.276V22.5z"></path></svg></a>
+                            </li>
+                            <li class="px-4">
+                                <a href="https://github.com/slappyslap" target="_blank"><svg class="fill-current hover:fill-current hover:text-secondary dark:text-white dark:hover:text-gray-400 transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5"><path data-name="Icon ionic-logo-github" d="M15.75 0A15.957 15.957 0 000 16.15a16.12 16.12 0 0010.772 15.322 1.235 1.235 0 00.267.028.762.762 0 00.809-.8c0-.387-.014-1.4-.021-2.749a7.2 7.2 0 01-1.589.19 3.659 3.659 0 01-3.72-2.355 4.265 4.265 0 00-1.751-2.362c-1.371-.963-.007-.991.1-.991h.007a3.386 3.386 0 012.412 1.673 3.092 3.092 0 002.784 1.765 4.426 4.426 0 001.8-.422 3.489 3.489 0 011-2.159c-3.495-.408-7.172-1.793-7.172-7.98a6.321 6.321 0 011.617-4.331 5.945 5.945 0 01.155-4.275 1.311 1.311 0 01.352-.035c.57 0 1.856.218 3.98 1.695a14.64 14.64 0 017.889 0c2.123-1.477 3.41-1.695 3.98-1.695a1.311 1.311 0 01.352.035 5.945 5.945 0 01.155 4.275 6.347 6.347 0 011.617 4.331c0 6.2-3.684 7.566-7.193 7.966a3.916 3.916 0 011.069 2.988c0 2.159-.021 3.9-.021 4.43a.758.758 0 00.8.809 1.361 1.361 0 00.281-.028A16.117 16.117 0 0031.5 16.15 15.957 15.957 0 0015.75 0z"></path></svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="pt-24" id="myProjects">
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes projets</h3>
+                    <div class="w-full">
+                        <div class="flex flex-col flex-wrap md:flex-row h-full">
+
+                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
+                                <div class="rounded overflow-hidden shadow-2xl">
+                                    <img class="w-full" src="https://picsum.photos/seed/picshoot/600/400" alt="">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">Picshoot</div>
+                                        <p class="text-gray-700 dark:text-gray-200 text-base">
+                                            Le réseau social de la photographie et des lieux incroyables
+                                        </p>
+                                    </div>
+                                    <div class="px-6 pt-4 pb-2">
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photographie</span>
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#developpement web & mobile</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
+                                <div class="rounded overflow-hidden shadow-2xl">
+                                    <img class="w-full" src="https://picsum.photos/seed/galerie/600/400" alt="">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">Gallerie</div>
+                                        <p class="text-gray-700 dark:text-gray-200 text-base">
+                                            Une gallerie pour mes meilleurs cliché
+                                        </p>
+                                    </div>
+                                    <div class="px-6 pt-4 pb-2">
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photographie</span>
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#developpement web</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
+                                <div class="rounded overflow-hidden shadow-2xl">
+                                    <img class="w-full" src="https://picsum.photos/seed/intranet/600/400" alt="">
+                                    <div class="px-6 py-4">
+                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">ERP</div>
+                                        <p class="text-gray-700 dark:text-gray-200 text-base">
+                                            Gestion entreprise
+                                        </p>
+                                    </div>
+                                    <div class="px-6 pt-4 pb-2">
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#entreprise</span>
+                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#developpement web</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- studies -->
+            <section id="studies" class="pt-24">
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes études</h3>
+                    <div class="description w-full md:w-3/4">
+                        <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
+                            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://picsum.photos/seed/CSI/600/400')" title="BTSSN">
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="mb-8">
+                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">Bachelor CSI</div>
+                                    <p class="text-gray-700 dark:text-gray-300 text-base">2021 - 2022 | BACHELOR Concepteur de Systèmes d’Information</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
+                            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://picsum.photos/seed/btssnort/600/400')" title="BTSSN">
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 w-full rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="mb-8">
+                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BTS SN-IR</div>
+                                    <p class="text-gray-700 dark:text-gray-300 text-base">2019 - 2021 | BTS Système Numérique, option Informatique Réseau</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
+                            <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://picsum.photos/seed/bacpro/600/400')" title="BTSSN">
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 w-full rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                                <div class="mb-8">
+                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC PRO SN</div>
+                                    <p class="text-gray-700 dark:text-gray-300 text-base">2016 - 2019 | BAC Professionnel Système Numérique. Obtenu avec mention Très Bien</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skills -->
+            <section id="skills" class="pt-24 pb-24">
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes compétences</h3>
+                    <div class="flex flex-col md:flex-row items-start">
+                        <div class="skills-description w-full md:w-2/4">
+                            <p class="text-sm text-secondary dark:text-gray-200 leading-6 font-normal">Depuis que j'ai commencé la programmation, j'adore en apprendre toujours plus et découvrir de nouvelles technologies, mes expériences en entreprises ainsi qu'as l'école m'ont permis de développer mes compétences</p>
+                        </div>
+                        <div class="skills-list mt-9 md:mt-0 w-full md:w-2/4 flex justify-start md:justify-center">
+                            <ul class="flex flex-wrap md:justify-end w-full md:pl-20">
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gestion serveur</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Linux</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Pfsense</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Esxi</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Proxmox</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">HTML</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">CSS</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Bootstrap</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Tailwind CSS</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Javascript</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">React</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">VueJs</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Php</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Symfony 3/4/5</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Python</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">GoLang</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">C#</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">C++</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gitlab-ci</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Git</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Docker</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Grafana</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">InfluxDB</li>
+                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Centreon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
