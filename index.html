@@ -331,39 +331,34 @@
                 <div class="flex flex-col">
                     <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Contact</h3>
                     <div class="flex flex-col md:flex-row items-start">
-                        <div class="contact-description w-full md:w-2/4">
-                            <p class="text-sm text-secondary dark:text-gray-200 leading-6 font-normal">Si vous souhaitez me contacter, vous pouvez m'envoyer un mail à l'adresse suivante : <a href="mailto:contact@maximebadin.fr">contact@maximebadin.fr</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <form action="https://api.web3forms.com/submit" method="post" class="space-y-4" id="contact-form">
+                        <form action="https://api.web3forms.com/submit" method="post" class="space-y-4" id="contact-form">
 
-                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        <input type="hidden" name="subject" value="Contact form maximebadin.fr">
-                        <input type="hidden" name="from_name" value="maximebadin.fr">
-                        <input type="checkbox" name="botcheck" id="" style="display: none;">
-
-                        <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Votre mail</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="test@example.com" required>
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sujet</label>
-                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Dites-nous comment nous pouvons vous aider" required>
-                        </div>
-                        <div class="sm:col-span-2">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Votre message</label>
-                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Laisser un message ..."></textarea>
-                        </div>
-
-                        <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
-
-                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Envoyer mon message</button>
-                    
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <input type="hidden" name="subject" value="Contact form maximebadin.fr">
+                            <input type="hidden" name="from_name" value="maximebadin.fr">
+                            <input type="checkbox" name="botcheck" id="" style="display: none;">
+    
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Votre mail</label>
+                                <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="test@example.com" required>
+                            </div>
+                            <div>
+                                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sujet</label>
+                                <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Dites-nous comment nous pouvons vous aider" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Votre message</label>
+                                <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Laisser un message ..."></textarea>
+                            </div>
+    
+                            <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
+    
+                            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Envoyer mon message</button>
                         
-                    </form>
+                            
+                        </form>
+                    </div>
                 </div>
             </section>
             
