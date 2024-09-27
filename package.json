@@ -17,6 +17,7 @@
     "tailwindcss": "^2.2.16"
   },
   "scripts": {
-    "build": "postcss ./assets/css/app.css -o ./public/build/tailwind.css"
+    "build": "postcss ./assets/css/app.css -o ./public/build/tailwind.css",
+    "watch": "postcss ./assets/css/app.css -o ./public/build/tailwind.css --watch"
   }
 }
