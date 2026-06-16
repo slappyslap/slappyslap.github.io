@@ -6,436 +6,492 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <meta property="og:title" content="Maxime Badin - Web, Infrastructure et devops" />
-    	<meta property="og:type" content="article" />
-    	<meta property="og:url" content="https://maximebadin.fr" />
-    	<meta property="og:description" content="Developpeur web, devops et SRE, Je suis là pour vous aider à réaliser vos projets web et infrastructure" />
-            
-        <title>Maxime Badin - Web, Infrastructure et devops</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://maximebadin.fr" />
+        <meta property="og:description" content="Développeur web, devops et SRE, je suis là pour vous aider à réaliser vos projets web et infrastructure" />
+
+        <title>Maxime Badin — Web, Infrastructure & Devops</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./public/build/tailwind.css">
         <link rel="stylesheet" href="assets/css/app.css">
 
         <!-- FAVICON -->
-
         <link rel="apple-touch-icon" sizes="180x180" href="./public/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicon/favicon-16x16.png">
         <link rel="manifest" href="./public/images/favicon/site.webmanifest">
     </head>
-    <body class="w-full dark:bg-gray-800">
+    <body>
 
         <script defer data-domain="maximebadin.fr" src="https://plausible.maximebadin.fr/js/script.js"></script>
-        <header class="sticky top-0 z-50 bg-white dark:bg-gray-800 hidden sm:block">
-            <nav>
-                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div class="relative flex items-center justify-between h-16">
-                        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
-                            <div class="hidden sm:block sm:ml-6">
-                                <div class="flex space-x-4">
-                                    <a href="#" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Accueil</a>
-                                    <a href="#aboutMe" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">A propos</a>
-                                    <a href="#myProjects" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Projets</a>
-                                    <a href="#work" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Expériences</a>
-                                    <a href="#studies" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Etudes</a>
-                                    <a href="#skills" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Compétences</a>
-                                    <a href="#contact" class="text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-400 px-3 py-2 text-sm font-medium">Contact</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+        <!-- ── NAVBAR ── -->
+        <header class="navbar sticky top-0 z-50">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8">
+                <div class="flex items-center justify-between h-14">
+                    <a href="#" style="font-size:0.875rem; font-weight:700; letter-spacing:-0.01em; color:#1a1a1a;">
+                        Maxime Badin
+                    </a>
+                    <nav class="hidden sm:flex items-center gap-0.5">
+                        <a href="#" class="nav-link">Accueil</a>
+                        <a href="#aboutMe" class="nav-link">À propos</a>
+                        <a href="#myProjects" class="nav-link">Projets</a>
+                        <a href="#work" class="nav-link">Expériences</a>
+                        <a href="#studies" class="nav-link">Études</a>
+                        <a href="#skills" class="nav-link">Compétences</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </header>
-        <main class="container mx-auto px-6 text-center sm:text-left sm:px-6 lg:px-28 md:space-y-8">
-            <!-- home -->
-            <section>
-                <div class="mx-auto flex flex-col md:flex-row items-center my-0 sm:my-12 md:my-24">
-                    <div class="flex flex-col w-full lg:w-2/3 justify-center items-start pt-12 pb-24">
-                        <h1 class="text-3xl md:text-5xl xl:text-6xl font-medium leading-tight md:leading-tight xl:leading-tight text-secondary dark:text-gray-200 mb-5 uppercase w-full sm:w-auto">Maxime Badin</h1>
-                        <h3 class="text-1xl md:text-1xl xl:text-2xl font-semibold leading-tight md:leading-tight xl:leading-tight text-secondary dark:text-gray-200 w-full sm:w-auto"><span class="typed" data-typed-items="Développeur, SRE, Devops"></span></h3>
-                        <p class="leading-normal mb-4 dark:text-gray-200">Passionné par l'informatique et les nouvelles technologies depuis toujours. Je suis développeur web et je me forme sur le devops / SRE</p>
+
+        <main class="max-w-5xl mx-auto px-6 lg:px-8">
+
+            <!-- ── HERO ── -->
+            <section class="flex flex-col md:flex-row items-center gap-12 py-20 md:py-28">
+                <div class="flex-1">
+                    <p style="font-size:0.75rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:#888079;" class="mb-4">SRE · Développeur · Associé Waays</p>
+                    <h1 style="font-size:clamp(2.4rem,5vw,3.5rem); font-weight:700; letter-spacing:-0.03em; color:#1a1a1a; line-height:1.1;" class="mb-5">
+                        Maxime Badin
+                    </h1>
+                    <h2 style="font-size:1.15rem; color:#888079; font-weight:400;" class="mb-6">
+                        <span class="typed" data-typed-items="Associé @ Waays,SRE,Développeur,Devops"></span>
+                    </h2>
+                    <p style="font-size:0.925rem; color:#5a554d; max-width:420px; line-height:1.7;" class="mb-8">
+                        Tombé dans l'informatique petit, je passe mes journées entre Kubernetes, de l'observabilité et du backend.
+                        Hors ligne, je swap le terminal contre un masque de plongée, un vélo ou des haltères.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#contact" class="btn-primary">Me contacter</a>
+                        <a href="#myProjects" class="btn-ghost">Voir mes projets</a>
                     </div>
-                    <div class="w-full lg:w-1/3 lg:py-6 text-center">
-                        <img src="public/images/desktop.png" alt="Desktop of developper">
-                    </div>
+                </div>
+                <div class="hidden md:flex flex-shrink-0 items-center justify-center" style="width:260px; height:260px;">
+                    <img src="public/images/desktop.png" alt="Illustration développeur" style="width:100%; height:100%; object-fit:contain; opacity:0.85;">
                 </div>
             </section>
 
-            <!-- About me -->
+            <hr class="section-divider">
 
-            <section id="aboutMe">
-                <div class="flex flex-col">
-                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">A propos de moi</h3>
-                    <div class="description w-full md:w-3/4">
-                        <div class="flex flex-col md:flex-row h-full">
-                            <div class="profile-avatar md:mr-10">
-                                <div class="border border-gray-300 rounded-md max-w-sm w-48 h-full mx-auto">
-                                    <div class="flex h-full">
-                                        <div class="flex">
-                                            <img class="rounded-md object-cover object-center w-full h-full" src="public/images/maxime.jpg" alt="Photo de Maxime Badin">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col mt-10 md:mt-0">
-                                <p class="text-sm text-secondary leading-6 font-semibold dark:text-gray-200">Maxime BADIN</p>
-                                <p class="text-sm text-secondary leading-6 font-normal mt-5 dark:text-gray-200">Au cours des dernières années, j'ai travaillé sur de nombreux projets personnels comme professionnels. Je suis passionné par la façon d'utiliser les technologies de pointe pour résoudre un vaste éventail de problèmes, qu'ils soient centrés sur l'entreprise ou liés à la société.</p>
-                                <p class="text-sm text-secondary leading-6 mt-5 dark:text-gray-200">L'informatique est une passion pour moi, j'adore apprendre, découvrir de nouvelles technologies et de nouveaux domaines. En ce moment, je travaille sur Kube, Zabbix et plus globalement sur le devops / SRE</p>
-                            </div>
-                        </div>
+            <!-- ── ABOUT ── -->
+            <section id="aboutMe" class="py-20">
+                <h3 class="section-title">À propos de moi</h3>
+                <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <div class="flex-shrink-0">
+                        <img src="public/images/maxime.jpg" alt="Photo de Maxime Badin"
+                            style="width:120px; height:120px; object-fit:cover; border-radius:8px; border:1px solid #e8e5df;">
                     </div>
-                    <div class="mt-8">
-                        <ul class="flex justify-start items-center">
-                            <li class="pr-4">
-                                <a href="https://www.linkedin.com/in/maxime-badin-96bb48162/" target="_blank"><svg class="fill-current hover:fill-current hover:text-secondary dark:text-white dark:hover:text-gray-400 transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="26.993" height="26.993"><path data-name="Icon ionic-logo-linkedin" d="M24.834 0H2.306A2.2 2.2 0 000 2.1v22.58a2.375 2.375 0 002.306 2.313h22.521a2.255 2.255 0 002.166-2.313V2.1A2.07 2.07 0 0024.834 0zM8.367 22.5H4.5V10.477h3.867zm-1.8-13.852h-.028A1.985 1.985 0 014.5 6.574 2 2 0 016.588 4.5a1.992 1.992 0 012.067 2.074 2 2 0 01-2.088 2.074zM22.5 22.5h-3.867v-6.574c0-1.575-.562-2.651-1.962-2.651a2.116 2.116 0 00-1.983 1.425 2.6 2.6 0 00-.134.949V22.5h-3.867V10.477h3.867v1.673a3.915 3.915 0 013.488-1.95c2.538 0 4.458 1.669 4.458 5.276V22.5z"></path></svg></a>
-                            </li>
-                            <li class="px-4">
-                                <a href="https://github.com/slappyslap" target="_blank"><svg class="fill-current hover:fill-current hover:text-secondary dark:text-white dark:hover:text-gray-400 transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5"><path data-name="Icon ionic-logo-github" d="M15.75 0A15.957 15.957 0 000 16.15a16.12 16.12 0 0010.772 15.322 1.235 1.235 0 00.267.028.762.762 0 00.809-.8c0-.387-.014-1.4-.021-2.749a7.2 7.2 0 01-1.589.19 3.659 3.659 0 01-3.72-2.355 4.265 4.265 0 00-1.751-2.362c-1.371-.963-.007-.991.1-.991h.007a3.386 3.386 0 012.412 1.673 3.092 3.092 0 002.784 1.765 4.426 4.426 0 001.8-.422 3.489 3.489 0 011-2.159c-3.495-.408-7.172-1.793-7.172-7.98a6.321 6.321 0 011.617-4.331 5.945 5.945 0 01.155-4.275 1.311 1.311 0 01.352-.035c.57 0 1.856.218 3.98 1.695a14.64 14.64 0 017.889 0c2.123-1.477 3.41-1.695 3.98-1.695a1.311 1.311 0 01.352.035 5.945 5.945 0 01.155 4.275 6.347 6.347 0 011.617 4.331c0 6.2-3.684 7.566-7.193 7.966a3.916 3.916 0 011.069 2.988c0 2.159-.021 3.9-.021 4.43a.758.758 0 00.8.809 1.361 1.361 0 00.281-.028A16.117 16.117 0 0031.5 16.15 15.957 15.957 0 0015.75 0z"></path></svg></a>
-                            </li>
-                            <li class="px-4">
-                                <a href="https://instagram.com/maximeb_fr" target="_blank">
-                                    <svg class="fill-current hover:fill-current hover:text-secondary dark:text-white dark:hover:text-gray-400 transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 512 512"><path fill="currentColor" d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"/><path fill="currentColor" d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112Z"/></svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <section class="pt-24" id="myProjects">
-                <div class="flex flex-col">
-                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes projets</h3>
-                    <div class="w-full">
-                        <div class="flex flex-col flex-wrap md:flex-row h-full">
-
-                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
-                                <div class="rounded overflow-hidden shadow-2xl">
-                                    <img class="w-full" src="public/images/picshoot.jpg" style="height: 140px; object-fit: cover;" alt="">
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">My-Places</div>
-                                        <p class="text-gray-700 dark:text-gray-200 text-base">
-                                            Le réseau social de la photographie et des lieux incroyables
-                                        </p>
-                                    </div>
-                                    <div class="pt-4 pb-2">
-                                        <ul class="flex flex-wrap justify-center w-full">
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Symfony</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Api platform</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">React Native</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Docker</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">PostgreSQL</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">MapBox</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">ElasticSearch</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="https://dash-x.fr" class="w-full md:w-1/3 xl:w-1/4 p-2">
-                                <div class="rounded overflow-hidden shadow-2xl">
-                                    <img class="w-full" src="public/images/dash-x.png" style="height: 140px; object-fit: contain;" alt="">
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">Dash-X</div>
-                                        <p class="text-gray-700 dark:text-gray-200 text-base">
-                                            Dashboard pour entrepreneur
-                                        </p>
-                                    </div>
-                                    <div class="pt-4 pb-2">
-                                        <ul class="flex flex-wrap justify-center w-full">
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Symfony</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Nombreuse interconnexion</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Docker</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">PostgreSQL</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Stripe</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div style="max-width:560px;">
+                        <p style="font-weight:600; font-size:0.95rem; color:#1a1a1a;" class="mb-1">Maxime Badin</p>
+                        <p style="font-size:0.8rem; color:#888079;" class="mb-5">Associé @ Waays · Lyon, France</p>
+                        <p style="font-size:0.9rem; color:#5a554d; line-height:1.75;" class="mb-4">
+                            Au cours des dernières années, j'ai travaillé sur de nombreux projets personnels comme professionnels.
+                            Je suis passionné par la façon d'utiliser les technologies de pointe pour résoudre un vaste éventail de problèmes,
+                            qu'ils soient centrés sur l'entreprise ou liés à la société.
+                        </p>
+                        <p style="font-size:0.9rem; color:#5a554d; line-height:1.75;" class="mb-6">
+                            L'informatique est une passion, j'adore apprendre et découvrir de nouvelles technologies.
+                            En ce moment, je travaille sur Kubernetes, Zabbix et plus globalement sur le Devops&nbsp;/&nbsp;SRE.
+                        </p>
+                        <div class="flex gap-2">
+                            <a href="https://www.linkedin.com/in/maxime-badin-96bb48162/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 27 27" fill="currentColor"><path d="M24.834 0H2.306A2.2 2.2 0 000 2.1v22.58a2.375 2.375 0 002.306 2.313h22.521a2.255 2.255 0 002.166-2.313V2.1A2.07 2.07 0 0024.834 0zM8.367 22.5H4.5V10.477h3.867zm-1.8-13.852h-.028A1.985 1.985 0 014.5 6.574 2 2 0 016.588 4.5a1.992 1.992 0 012.067 2.074 2 2 0 01-2.088 2.074zM22.5 22.5h-3.867v-6.574c0-1.575-.562-2.651-1.962-2.651a2.116 2.116 0 00-1.983 1.425 2.6 2.6 0 00-.134.949V22.5h-3.867V10.477h3.867v1.673a3.915 3.915 0 013.488-1.95c2.538 0 4.458 1.669 4.458 5.276V22.5z"/></svg>
                             </a>
-
-                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
-                                <div class="rounded overflow-hidden shadow-2xl">
-                                    <img class="w-full bg-white" src="public/images/kubernetes.webp" style="height: 140px; object-fit: cover;" alt="">
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">Cluster K8S</div>
-                                        <p class="text-gray-700 dark:text-gray-200 text-base">
-                                            Mise en place d'un cluster K8S de production
-                                        </p>
-                                    </div>
-                                    <div class="pt-4 pb-2">
-                                        <ul class="flex flex-wrap justify-center w-full">
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Kubenetes</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gitlab-CI</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Terraform</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Kubespray</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Ansible</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">ArgoCD</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gitlab-CI</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Prometheus</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Grafana</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="w-full md:w-1/3 xl:w-1/4 p-2">
-                                <div class="rounded overflow-hidden shadow-2xl">
-                                    <img class="w-full" src="public/images/workout.jpg" style="height: 140px; object-fit: cover;" alt="Photo by Karsten Winegeart on Unsplash">
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold dark:text-gray-200 text-xl mb-2">Workout Tracker</div>
-                                        <p class="text-gray-700 dark:text-gray-200 text-base">
-                                            Tracking des entrainement musculation
-                                        </p><p> </p>
-                                    </div>
-                                    <div class="pt-4 pb-2">
-                                        <ul class="flex flex-wrap justify-center w-full">
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">React-native</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Tailwind</li>
-                                            <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Expo / EAS</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://github.com/slappyslap" target="_blank" class="social-icon" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M15.75 0A15.957 15.957 0 000 16.15a16.12 16.12 0 0010.772 15.322 1.235 1.235 0 00.267.028.762.762 0 00.809-.8c0-.387-.014-1.4-.021-2.749a7.2 7.2 0 01-1.589.19 3.659 3.659 0 01-3.72-2.355 4.265 4.265 0 00-1.751-2.362c-1.371-.963-.007-.991.1-.991h.007a3.386 3.386 0 012.412 1.673 3.092 3.092 0 002.784 1.765 4.426 4.426 0 001.8-.422 3.489 3.489 0 011-2.159c-3.495-.408-7.172-1.793-7.172-7.98a6.321 6.321 0 011.617-4.331 5.945 5.945 0 01.155-4.275 1.311 1.311 0 01.352-.035c.57 0 1.856.218 3.98 1.695a14.64 14.64 0 017.889 0c2.123-1.477 3.41-1.695 3.98-1.695a1.311 1.311 0 01.352.035 5.945 5.945 0 01.155 4.275 6.347 6.347 0 011.617 4.331c0 6.2-3.684 7.566-7.193 7.966a3.916 3.916 0 011.069 2.988c0 2.159-.021 3.9-.021 4.43a.758.758 0 00.8.809 1.361 1.361 0 00.281-.028A16.117 16.117 0 0031.5 16.15 15.957 15.957 0 0015.75 0z"/></svg>
+                            </a>
+                            <a href="https://instagram.com/maximeb_fr" target="_blank" class="social-icon" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="currentColor"><path d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"/><path d="M377.33 162.67a28 28 0 1 1 28-28 27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256 74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112 112 112 0 0 0-112-112Z"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- work -->
-            <div id="studies"></div>
-            <section id="work" class="pt-24 flex flex-wrap gap-0 md:gap-5">
-                <div class="flex flex-col w-full md:w-auto md:flex-1">
-                    <div class="w-full">
-                        <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mon experience</h3>
-                        <div class="description">
-                            <div class=" w-full flex-col lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="text-center w-full">
-                                    <img class="m-auto block" src="https://lokris.net/assets/img/logo-base.png" alt="Lokris logo">
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">Alternance Lokris</div>
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-sm mb-2">2021-2024</div>
-                                        
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">
-                                            Infrastructure <small>(Vmware, Linux 40 vms, Python / Bash, Teleport)</small> <br>
-                                            IAC <small>(Terraform, Ansible)</small> <br>
-                                            Développement symfony <small>(CRM, ERP, Plateforme SaaS)</small> <br>
-                                            React native <small>(Application mobile)</small> <br>
-                                            Monitoring <small>(Centreon, Influx, Grafana, Loki)</small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+            <hr class="section-divider">
 
-                            <div class="w-full lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="d-flex my-auto py-10 h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden align-middle" title="MS2D">
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">Perso</div>
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">Projets personnel</div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">Je travaille sur de nombreux projets que vous pouvez retrouver dans la catégories
-                                            <a href="#myProjects">Projets</a>
-                                        </p>
-                                    </div>
-                                </div>
+            <!-- ── PROJECTS ── -->
+            <section id="myProjects" class="py-20">
+                <h3 class="section-title">Mes projets</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <!-- My-Places -->
+                    <div class="card flex flex-col">
+                        <div style="height:130px; overflow:hidden;">
+                            <img src="public/images/picshoot.jpg" alt="" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="flex flex-col flex-1 p-4">
+                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;" class="mb-1">My-Places</p>
+                            <p style="font-size:0.8rem; color:#888079; line-height:1.5;" class="mb-3 flex-1">Le réseau social de la photographie et des lieux incroyables</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="tag">Symfony</span>
+                                <span class="tag">API Platform</span>
+                                <span class="tag">React Native</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">MapBox</span>
+                                <span class="tag">ElasticSearch</span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Dash-X -->
+                    <a href="https://dash-x.fr" target="_blank" class="card flex flex-col">
+                        <div style="height:130px; overflow:hidden; background:#f8f7f4; display:flex; align-items:center; justify-content:center;">
+                            <img src="public/images/dash-x.png" alt="" style="max-height:90px; object-fit:contain;">
+                        </div>
+                        <div class="flex flex-col flex-1 p-4">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Dash-X</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#888079" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </div>
+                            <p style="font-size:0.8rem; color:#888079; line-height:1.5;" class="mb-3 flex-1">Dashboard pour entrepreneur</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="tag">Symfony</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Cluster K8S -->
+                    <div class="card flex flex-col">
+                        <div style="height:130px; overflow:hidden; background:#fff; display:flex; align-items:center; justify-content:center;">
+                            <img src="public/images/kubernetes.webp" alt="" style="max-height:90px; object-fit:contain;">
+                        </div>
+                        <div class="flex flex-col flex-1 p-4">
+                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;" class="mb-1">Cluster K8S</p>
+                            <p style="font-size:0.8rem; color:#888079; line-height:1.5;" class="mb-3 flex-1">Mise en place d'un cluster Kubernetes de production</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">Gitlab-CI</span>
+                                <span class="tag">Terraform</span>
+                                <span class="tag">Ansible</span>
+                                <span class="tag">ArgoCD</span>
+                                <span class="tag">Prometheus</span>
+                                <span class="tag">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Workout Tracker -->
+                    <div class="card flex flex-col">
+                        <div style="height:130px; overflow:hidden;">
+                            <img src="public/images/workout.jpg" alt="" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="flex flex-col flex-1 p-4">
+                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;" class="mb-1">Workout Tracker</p>
+                            <p style="font-size:0.8rem; color:#888079; line-height:1.5;" class="mb-3 flex-1">Tracking des entraînements musculation</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">Expo / EAS</span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="pt-24 md:pt-0 flex flex-col w-full md:w-auto md:flex-1">
-                    <div class="w-full">
-                        <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes études</h3>
-                        <div class="description">
-                            <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="d-flex my-auto py-10 h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden align-middle" title="MS2D">
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC +5</div>
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-sm mb-2">2022-2024</div>
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">MS2D</div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">ORT Lyon <br> Manager des solutions digitale et data <br> Mention Très Bien</p>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- ── EXPERIENCE & STUDIES ── -->
+            <section class="py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                    <!-- Experience -->
+                    <div id="work">
+                        <h3 class="section-title">Expériences</h3>
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Waays</p>
+                                            <p style="font-size:0.75rem; color:#888079;">Associé · SRE temps partagé</p>
+                                        </div>
+                                        <span class="badge">2024 →</span>
                                     </div>
+                                    <p style="font-size:0.825rem; color:#5a554d; line-height:1.65;">
+                                        SRE temps partagé (40 clients) · Kubernetes (plateforme & client via Kers) ·
+                                        Performance & monitoring (K6, Prometheus, Tempo, Loki, Grafana) ·
+                                        Opensource (Debian, K8s, OpenTofu…)
+                                    </p>
                                 </div>
                             </div>
-                            
-                            <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="d-flex my-auto py-10 h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden align-middle" title="MS2D">
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC +3</div>
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-sm mb-2">2021-2022</div>
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">Bachelor CSI</div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">
-                                            ORT Lyon
-                                            <br>BACHELOR Concepteur de Systèmes d’Information
-                                            <br> Mention Très Bien
-                                        </p>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Sully Group</p>
+                                            <p style="font-size:0.75rem; color:#888079;">Développeur / Devops</p>
+                                        </div>
+                                        <span class="badge">2024</span>
                                     </div>
+                                    <p style="font-size:0.825rem; color:#5a554d; line-height:1.65;">
+                                        Développement Symfony · Outils développeur & intégration Docker ·
+                                        Devops (Gitlab-CI, Jenkins, Asqatasun)
+                                    </p>
                                 </div>
                             </div>
-    
-                            <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="d-flex my-auto py-10 h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden align-middle" title="MS2D">
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC +2</div>
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-sm mb-2">2019-2021</div>
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 w-full rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BTS SN-IR</div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">Ort Lyon <br> BTS Systèmes Numériques, option Informatique et Réseaux</p>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Lokris</p>
+                                            <p style="font-size:0.75rem; color:#888079;">Alternance · SRE & Développeur</p>
+                                        </div>
+                                        <span class="badge">2021–2024</span>
                                     </div>
+                                    <p style="font-size:0.825rem; color:#5a554d; line-height:1.65;">
+                                        Infrastructure (VMware, Linux, Python/Bash, Teleport) ·
+                                        IAC (Terraform, Ansible) · Symfony (CRM, ERP, SaaS) ·
+                                        React Native · Monitoring (Centreon, Influx, Grafana, Loki)
+                                    </p>
                                 </div>
                             </div>
-    
-                            <div class=" w-full lg:max-w-full lg:flex shadow-2xl my-5">
-                                <div class="d-flex my-auto py-10 h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden align-middle" title="MS2D">
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC</div>
-                                    <div class="text-gray-900 dark:text-gray-200 font-bold text-sm mb-2">2016-2019</div>
-                                    
-                                </div>
-                                <div class="bg-white dark:bg-gray-800 w-full rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                                    <div class="mb-8">
-                                        <div class="text-gray-900 dark:text-gray-200 font-bold text-xl mb-2">BAC PRO SN</div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-base">2016 - 2019 <br> BAC Professionnel Systèmes Numériques <br> Mention Très Bien</p>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Projets personnels</p>
                                     </div>
+                                    <p style="font-size:0.825rem; color:#5a554d; line-height:1.65;">
+                                        Nombreux projets visibles dans la section
+                                        <a href="#myProjects" style="color:#1a1a1a; text-decoration:underline; text-underline-offset:3px;">Projets</a>.
+                                    </p>
                                 </div>
                             </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Studies -->
+                    <div id="studies">
+                        <h3 class="section-title">Études</h3>
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">MS2D — BAC +5</p>
+                                            <p style="font-size:0.75rem; color:#888079;">ORT Lyon · Mention Très Bien</p>
+                                        </div>
+                                        <span class="badge">2022–2024</span>
+                                    </div>
+                                    <p style="font-size:0.825rem; color:#5a554d;">Manager des solutions digitales et data</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">Bachelor CSI — BAC +3</p>
+                                            <p style="font-size:0.75rem; color:#888079;">ORT Lyon · Mention Très Bien</p>
+                                        </div>
+                                        <span class="badge">2021–2022</span>
+                                    </div>
+                                    <p style="font-size:0.825rem; color:#5a554d;">Concepteur de Systèmes d'Information</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">BTS SN-IR — BAC +2</p>
+                                            <p style="font-size:0.75rem; color:#888079;">ORT Lyon</p>
+                                        </div>
+                                        <span class="badge">2019–2021</span>
+                                    </div>
+                                    <p style="font-size:0.825rem; color:#5a554d;">Systèmes Numériques, option Informatique et Réseaux</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-card">
+                                    <div class="flex items-start justify-between gap-3 mb-2">
+                                        <div>
+                                            <p style="font-weight:700; font-size:0.9rem; color:#1a1a1a;">BAC PRO SN</p>
+                                            <p style="font-size:0.75rem; color:#888079;">Mention Très Bien</p>
+                                        </div>
+                                        <span class="badge">2016–2019</span>
+                                    </div>
+                                    <p style="font-size:0.825rem; color:#5a554d;">BAC Professionnel Systèmes Numériques</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- ── SKILLS ── -->
+            <section id="skills" class="py-20">
+                <h3 class="section-title">Compétences</h3>
+                <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <p style="font-size:0.875rem; color:#888079; line-height:1.7; max-width:260px;" class="flex-shrink-0">
+                        Depuis que j'ai commencé la programmation, j'adore apprendre et découvrir de nouvelles technologies.
+                        Mes expériences en entreprise et à l'école m'ont permis de développer un large panel de compétences.
+                    </p>
+                    <div class="flex-1">
+                        <p class="skill-category">Infrastructure & Cloud</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="tag">Gestion serveur</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Pfsense</span>
+                            <span class="tag">ESXi</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Proxmox</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                        <p class="skill-category">DevOps & IaC</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="tag">Docker / Compose</span>
+                            <span class="tag">Gitlab-CI</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Terraform</span>
+                            <span class="tag">OpenTofu</span>
+                            <span class="tag">Ansible</span>
+                            <span class="tag">ArgoCD</span>
+                            <span class="tag">FluxCD</span>
+                        </div>
+                        <p class="skill-category">Monitoring & Observabilité</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="tag">Grafana</span>
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Loki</span>
+                            <span class="tag">Tempo</span>
+                            <span class="tag">K6</span>
+                        </div>
+                        <p class="skill-category">Développement</p>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">NextJS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">Symfony</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">GoLang</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- skills -->
-            <section id="skills" class="pt-24 pb-24">
-                <div class="flex flex-col">
-                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Mes compétences</h3>
-                    <div class="flex flex-col md:flex-row items-start">
-                        <div class="skills-description w-full md:w-2/4">
-                            <p class="text-sm text-secondary dark:text-gray-200 leading-6 font-normal">Depuis que j'ai commencé la programmation, j'adore en apprendre toujours plus et découvrir de nouvelles technologies, mes expériences en entreprise ainsi qu'à l'école m'ont permis de développer mes compétences</p>
-                        </div>
-                        <div class="skills-list mt-9 md:mt-0 w-full md:w-2/4 flex justify-start md:justify-center">
-                            <ul class="flex flex-wrap md:justify-end w-full md:pl-20">
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gestion serveur</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Linux</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Pfsense</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Esxi</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">AWS</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Proxmox</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">HTML</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">CSS</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Bootstrap</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Tailwind CSS</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">JavaScript</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">React</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">VueJs</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Php</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Symfony 3/4/5</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Python</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">GoLang</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">C#</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">C++</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Gitlab-ci</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Git</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Docker / docker-compose</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Grafana</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">InfluxDB</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Centreon</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Kubernetes</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Zabbix</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Ansible</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">Terraform</li>
-                                <li class="bg-gray-100 dark:bg-gray-700 mb-2 mr-2 pt-1 pb-1 pl-4 pr-4 rounded text-sm text-secondary dark:text-gray-200 transition duration-500 ease-in-out">ArgoCD</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Contact -->
-            
-            <section class="pt-24 pb-24" id="contact">
-                <div class="flex flex-col">
-                    <h3 class="text-2xl md:text-3xl xl:text-4xl font-medium text-secondary dark:text-gray-200 mb-8 border-l-4 border-teal-500 pl-4">Contact</h3>
-                    <div class="flex flex-col md:flex-row items-start">
-                        <form action="https://api.web3forms.com/submit" method="post" class="space-y-4 w-full" id="contact-form">
+            <hr class="section-divider">
 
-                            <input type="hidden" name="access_key" value="96dfb6bd-3ece-4cb0-9e3e-cbc4f7619a0b">
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                            <input type="hidden" name="from_name" value="maximebadin.fr">
-                            <input type="checkbox" name="botcheck" id="" style="display: none;">
-    
-                            <div>
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Votre mail</label>
-                                <input type="email" id="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="test@example.com" required>
-                            </div>
-                            <div>
-                                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sujet</label>
-                                <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Dites-nous comment nous pouvons vous aider" required>
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Votre message</label>
-                                <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Laisser un message ..."></textarea>
-                            </div>
-    
-                            <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
-    
-                            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Envoyer mon message</button>
-                        
-                            
-                        </form>
-                    </div>
+            <!-- ── CONTACT ── -->
+            <section id="contact" class="py-20">
+                <h3 class="section-title">Contact</h3>
+                <div style="max-width:480px;">
+                    <p style="font-size:0.875rem; color:#888079; line-height:1.7;" class="mb-8">
+                        Une idée de projet, une opportunité, ou juste envie d'échanger ?
+                        Envoyez-moi un message, je vous répondrai rapidement.
+                    </p>
+                    <form action="https://api.web3forms.com/submit" method="post" class="space-y-4" id="contact-form">
+                        <input type="hidden" name="access_key" value="96dfb6bd-3ece-4cb0-9e3e-cbc4f7619a0b">
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="hidden" name="from_name" value="maximebadin.fr">
+                        <input type="checkbox" name="botcheck" style="display:none;">
+
+                        <div>
+                            <label for="email" class="form-label">Votre mail</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="vous@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="En quoi puis-je vous aider ?" required>
+                        </div>
+                        <div>
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" style="resize:none;" placeholder="Décrivez votre projet ou votre demande…"></textarea>
+                        </div>
+
+                        <div class="h-captcha" data-captcha="true" data-theme="light"></div>
+
+                        <button type="submit" class="btn-primary">
+                            Envoyer
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
                 </div>
             </section>
-            
-            <!-- Footer -->
-            <footer class="flex justify-center items-center h-24 border-t border-gray-300 dark:border-gray-700">
-                <div class="flex flex-col justify-center items-center">
-                    <p class="text-sm text-secondary dark:text-gray-200">© <span id="currentYear"></span> Maxime Badin</p>
-                </div>
-            </footer>
+
         </main>
 
-            <script src="https://web3forms.com/client/script.js" async defer></script>
-            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- ── FOOTER ── -->
+        <footer style="border-top:1px solid #e8e5df;">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8 h-14 flex items-center justify-between">
+                <span style="font-size:0.75rem; color:#b0aba2;">© <span id="currentYear"></span> Maxime Badin</span>
+                <span style="font-size:0.75rem; color:#b0aba2;">maximebadin.fr</span>
+            </div>
+        </footer>
 
-            <script>
-                const form = document.getElementById('contact-form');
-                
-                form.addEventListener('submit', function(e) {
-                
-                    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-                
-                    if (!hCaptcha) {
-                        e.preventDefault();
-                        alert("Please fill out captcha field")
-                        return
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <script>
+            // Contact form captcha check
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function(e) {
+                const hCaptcha = form.querySelector('textarea[name=h-captcha-response]');
+                if (hCaptcha && !hCaptcha.value) {
+                    e.preventDefault();
+                    alert("Veuillez compléter le captcha");
+                }
+            });
+        </script>
+
+        <script>
+            // Year
+            document.querySelector('#currentYear').textContent = new Date().getFullYear();
+
+            // Typed.js
+            const typedEl = document.querySelector('.typed');
+            if (typedEl) {
+                const strings = typedEl.getAttribute('data-typed-items').split(',');
+                new Typed('.typed', {
+                    strings: strings,
+                    loop: true,
+                    typeSpeed: 80,
+                    backSpeed: 40,
+                    backDelay: 2000
+                });
+            }
+
+            // Active nav link on scroll
+            const sections = document.querySelectorAll('section[id], div[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
                     }
                 });
-                </script>
-
-            <script>
-                
-                const currentYear = document.querySelector('#currentYear')
-                currentYear.innerHTML = new Date().getFullYear()
-                
-                const typed = document.querySelector('.typed')
-                if (typed) {
-                    let typed_strings = typed.getAttribute('data-typed-items')
-                    typed_strings = typed_strings.split(',')
-                    new Typed('.typed', {
-                        strings: typed_strings,
-                        loop: true,
-                        typeSpeed: 100,
-                        backSpeed: 50,
-                        backDelay: 2000
-                    });
-                }
-            </script>    
+            }, { rootMargin: '-30% 0px -60% 0px' });
+            sections.forEach(s => obs.observe(s));
+        </script>
     </body>
 </html>
